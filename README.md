@@ -33,6 +33,13 @@ The study conducts a rigorous comparative evaluation of **30 CNN architectures, 
 
 > **Key insight:** While SVM achieved the highest overall accuracy, CNN models demonstrated superior class-level balance and generalisation across imbalanced genre distributions — making them more suitable for real-world streaming applications with hundreds of genres.
 
+## Graphs
+<img width="979" height="699" alt="Screenshot 2026-06-23 at 10 11 27" src="https://github.com/user-attachments/assets/435b4432-1e9a-44c9-8d93-5e166424fa02" />
+
+<img width="753" height="523" alt="image" src="https://github.com/user-attachments/assets/3a48f578-6d4b-4be6-9c41-c79f473ff201" />
+
+<img width="973" height="407" alt="Screenshot 2026-06-23 at 10 10 44" src="https://github.com/user-attachments/assets/89679ee0-04ab-4706-b46b-1a098c72f17b" />
+
 ---
 
 ## 🗂️ Datasets
