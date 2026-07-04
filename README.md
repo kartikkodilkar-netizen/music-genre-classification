@@ -43,6 +43,20 @@ The study conducts a rigorous comparative evaluation of **30 CNN architectures, 
 
 ---
 
+## 🎧 Try It Live: Interactive Demo
+
+A lightweight, publicly deployable version of this research is available as a live web app:
+
+**👉 [huggingface.co/spaces/Optimuskartik39/music-genre-classifier](https://huggingface.co/spaces/Optimuskartik39/music-genre-classifier)**
+
+Upload any audio track and get real-time genre predictions across 10 genres, powered by a CNN built on the same architecture family used in this research.
+
+> **Note on scope:** the original dissertation research above was conducted on the full FMA-large and MuMu datasets (~108,000 tracks, 25+ genres). The live demo is a separate, smaller-scale retrain on the GTZAN dataset (1,000 tracks, 10 genres), chosen specifically for fast, lightweight public deployment rather than reproducing the dissertation's original results. It performs reliably on tracks with a strong, consistent genre signal throughout, and — consistent with published critiques of GTZAN — is less reliable on tracks that blend genres or lead with an atypical intro. This is a deliberate, documented limitation of the small demo dataset, not a flaw in the underlying research or architecture.
+
+**How it works:** the app splits an uploaded track into 3-second segments, extracts 58 audio features per segment (MFCCs, chroma, spectral centroid/bandwidth/rolloff, zero-crossing rate, harmonic/percussive components, tempo) via `librosa`, predicts per segment, then averages across the full track for a final result.
+
+---
+
 ## 🗂️ Datasets
 
 | Dataset | Tracks | Genres | Format |
@@ -169,7 +183,7 @@ music-genre-classification/
 
 ```bash
 # Clone the repository
-git clone https://github.com/kartikkodilkar/music-genre-classification.git
+git clone https://github.com/kartikkodilkar-netizen/music-genre-classification.git
 cd music-genre-classification
 
 # Install dependencies
@@ -201,7 +215,7 @@ Key references:
 MSc Business Analytics — Dublin Business School  
 Senior ITSM & Data Analytics Professional | Dublin, Ireland  
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/in/kartikkodilkar)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/in/kartik-kodilkar)
 [![Email](https://img.shields.io/badge/Email-kartik.kodilkar%40gmail.com-red)](mailto:kartik.kodilkar@gmail.com)
 
 ---
